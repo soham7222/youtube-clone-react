@@ -1,0 +1,92 @@
+.video_preview {
+    display: grid;
+    grid: 250px auto / 350px;
+    margin: 10px;
+}
+
+.video_image {
+    position: relative;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    cursor: pointer;
+}
+
+.video_preview_image {
+    height: 250px;
+    width: 350px;
+    border-radius: 10px;
+}
+
+.video_preview_image:hover {
+    border-radius: 0px;
+    transition: 1s;
+}
+
+.video_timestamp {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0.8;
+    border-radius: 2px;
+    font-weight: 500;
+    margin: 4px;
+    padding: 2px 2px;
+    line-height: 10px;
+    background: black;
+    color: white;
+}
+
+.video_info {
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.video_channel_logo {
+    width: 45px;
+    height: 45px;
+    border: 2px solid gold;
+    background-color: beige;
+    border-radius: 50%;
+    margin: 5px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: brown;
+}
+
+.verticalList {
+    padding-left: 5px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.video_basic_info {
+    padding-top: 5px;
+}
+
+.video_channel {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgb(111, 100, 85)
+}
+
+.video_view_time {
+    margin-top: 0px;
+    margin-left: 59px;
+    color: rgb(111, 100, 85)
+}
+
+.video_info_title {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 1.2em;
+    max-height: 2.4em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 5px;
+    font-size: 18px;
+}

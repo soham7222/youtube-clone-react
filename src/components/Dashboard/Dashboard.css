@@ -1,0 +1,56 @@
+.dashboard_content {
+    display: grid;
+    width: 100%;
+    float: right;
+    margin-top: 5px;
+    position: relative;
+}
+
+.dashboard_content_loader {
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.loader {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+}
+
+.loader:before,
+.loader:after,
+.loader span {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #c33636;
+    animation: loader 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+}
+
+.loader:before {
+    animation-delay: -0.24s;
+}
+
+.loader:after {
+    animation-delay: -0.12s;
+}
+
+@keyframes loader {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
